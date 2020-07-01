@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="887486e1-378e-44de-acdf-6aa2fb4e54ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data_cleaning.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/liuyuzhou svm model playground.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_cleaning_reformat.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EDUTRY.py" beforeDir="false" afterPath="$PROJECT_DIR$/EDUTRY.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VC.py" beforeDir="false" afterPath="$PROJECT_DIR$/VC.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/countries.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/countries.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/test.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/preparing_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/preparing_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/DD_T2_Five_Spheres_All_in_One.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/DD_T2_Five_Spheres_All_in_One.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Washed_DD_T2_Five_Spheres_All_in_One.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/Washed_DD_T2_Five_Spheres_All_in_One.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_cleaning.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_cleaning.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,44 +15,70 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/data_cleaning.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="127" lean-forward="true" selection-start-line="127" selection-end-line="127" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EDUTRY.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="73" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="73" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IMAA_spider.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="88" selection-start-line="88" selection-end-line="88" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/preparing_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/data_cleaning.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="340">
+                  <caret line="19" column="59" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/data_cleaning_reformat.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="331">
+                  <caret line="46" column="4" lean-forward="true" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/EDUTRY.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="315">
+                  <caret line="21" column="73" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="73" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/IMAA_spider.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="254">
+                  <caret line="88" selection-start-line="88" selection-end-line="88" selection-end-column="26" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/data_cleaning.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="325">
+                  <caret line="284" selection-start-line="284" selection-end-line="285" selection-end-column="57" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/preparing_data.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="74">
+                  <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -73,6 +93,7 @@
       <find>ra</find>
       <find>.ra</find>
       <find>rav</find>
+      <find>ravel</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -91,10 +112,11 @@
         <option value="$PROJECT_DIR$/VC.py" />
         <option value="$PROJECT_DIR$/preparing_data.py" />
         <option value="$PROJECT_DIR$/data_cleaning.py" />
+        <option value="$PROJECT_DIR$/data_cleaning_reformat.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="970" />
     <option name="width" value="950" />
     <option name="height" value="1080" />
@@ -138,7 +160,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.data_cleaning">
+  <component name="RunManager" selected="Python.data_cleaning_reformat">
     <configuration name="EDUTRY" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="liuyuzhou svm model playground" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -223,6 +245,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="data_cleaning_reformat" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="liuyuzhou svm model playground" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_cleaning_reformat.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="preparing_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="liuyuzhou svm model playground" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -244,41 +287,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pull_data_from_web" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="liuyuzhou svm model playground" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/venv/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/IMAA_spider.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.preparing_data" />
       <item itemvalue="Python.EDUTRY" />
       <item itemvalue="Python.VC" />
-      <item itemvalue="Python.pull_data_from_web" />
       <item itemvalue="Python.data_cleaning" />
+      <item itemvalue="Python.data_cleaning_reformat" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.data_cleaning_reformat" />
         <item itemvalue="Python.data_cleaning" />
         <item itemvalue="Python.preparing_data" />
         <item itemvalue="Python.VC" />
         <item itemvalue="Python.EDUTRY" />
-        <item itemvalue="Python.pull_data_from_web" />
       </list>
     </recent_temporary>
   </component>
@@ -296,7 +318,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="23" width="1920" height="1000" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14060031" />
@@ -304,7 +326,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3171226" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35367233" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39817628" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -362,17 +384,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///var/folders/x9/jcgvk48j42dd07tvq3kjmzn80000gn/T/TemporaryItems/（screencaptureui正在存储文稿，已完成11）/截屏2020-07-02 上午12.31.02.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/preparing_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+        <state relative-caret-position="74">
+          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data_cleaning.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="127" lean-forward="true" selection-start-line="127" selection-end-line="127" />
+        <state relative-caret-position="340">
+          <caret line="19" column="59" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_cleaning_reformat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="46" column="4" lean-forward="true" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
         </state>
       </provider>
     </entry>
