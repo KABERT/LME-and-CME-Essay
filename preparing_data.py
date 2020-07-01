@@ -9,10 +9,9 @@ import cvxpy as cp
 # -------------------------get all data prepared-----------------------------------
 def get_all_countries():
     # Get all countries
-    country_excel = pd.read_excel(r"countries.xlsx")
+    country_excel = pd.read_excel(r"data/countries.xlsx")
     # print(country_excel['Witt and Jackson 2016'].tolist())
-    countries = ['Austria', 'Australia', 'Belgium', 'Canada', 'Denmark', 'Finland', 'Ireland', 'Japan', "Germany",
-                 'Netherlands', 'Norway', 'New Zealand', 'Sweden', 'Switzerland', 'United Kingdom', 'United States']
+    countries = ['Austria', 'Australia', 'Belgium', 'Canada', 'Denmark', 'Finland', 'Germany', 'Ireland', 'Japan', 'Netherlands', 'Norway', 'New Zealand', 'Sweden', 'Switzerland', 'UK', 'USA', 'France', 'Greece', 'Italy', 'Portugal', 'South Korea', 'Spain', 'The Czech Republic', 'Hungary', 'Poland', 'Turkey']
 
     # LME = 1; CME = 0
     country_type = country_excel["16 TYPE"].tolist()
@@ -30,7 +29,7 @@ def get_all_countries():
 # -------------------------A helper function to get the country code-----------------
 def get_country_code():
     countries, code = get_all_countries()
-    market = pd.ExcelFile(r"capitalization as a percentage of GDP.xls")
+    market = pd.ExcelFile(r"data/capitalization as a percentage of GDP.xls")
     df1 = pd.read_excel(market, "Data")
 
     all_countries = df1["Country Name"].tolist()
@@ -41,7 +40,7 @@ def get_country_code():
     for i in range(len(all_country_code)):
         if all_countries[i].strip() in countries:
             wanted_country_code.append(all_country_code[i])
-            wanted_country_type.append(code[countries.index(all_countries[i])])
+            # wanted_country_type.append(code[countries.index(all_countries[i])])
     return wanted_country_code, wanted_country_type
 
 
@@ -49,15 +48,16 @@ def get_country_code():
 def scatter_helper(all_data, all_type):
     plt.scatter(all_data[:, 0], all_data[:, 1], color=["r" if y_point == 1 else "b" for y_point in all_type],
                 label="data")
+    plt.show()
 
 
 # -------------------A helper function to do the SVM--------------------------------
 def SVM_helper(all_data, all_type, c=1, dis=0.01):
-    clf = SVC(kernel="poly", gamma="auto", C=c)
+    clf = SVC(kernel="rbf", gamma="auto", C=c)
     clf.fit(all_data, all_type)
     X = all_data
-    x1s = np.linspace(min(X[:, 0]), max(X[:, 0]), 1200)
-    x2s = np.linspace(min(X[:, 1]), max(X[:, 1]), 1200)
+    x1s = np.linspace(min(X[:, 0]), max(X[:, 0]), 600)
+    x2s = np.linspace(min(X[:, 1]), max(X[:, 1]), 600)
     points = np.array([[x1, x2] for x1 in x1s for x2 in x2s])
     dist_bias = clf.decision_function(points)
     bounds_bias = np.array([pt for pt, dist in zip(points, dist_bias) if abs(dist) < dis])

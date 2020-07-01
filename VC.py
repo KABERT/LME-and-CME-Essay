@@ -21,7 +21,7 @@ def get_VC():
                     all_type.append(country_type[country_code.index(VC_country_list[i])])
     all_data = np.asarray(all_data)
 
-    SVM_helper(all_data, all_type, c=1)
+    SVM_helper(all_data, all_type)
 
 if __name__ == "__main__":
     get_VC()

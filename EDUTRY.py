@@ -24,7 +24,7 @@ def get_EDUTRY():
     all_data = np.asarray(all_data)
 
     # scatter_helper(all_data, all_type)
-    SVM_helper(all_data, all_type, C=1)
+    SVM_helper(all_data, all_type)
 
 
 if __name__ == "__main__":
