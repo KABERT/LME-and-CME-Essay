@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="887486e1-378e-44de-acdf-6aa2fb4e54ca" name="Default Changelist" comment="selected by rows debugged">
-      <change beforePath="$PROJECT_DIR$/data_cleaning_reformat.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_cleaning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Washed_DD_T2_Five_Spheres_All_in_One.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/Washed_DD_T2_Five_Spheres_All_in_One.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_cleaning.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_cleaning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plot_all_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot_all_data.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,28 +16,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/data_cleaning.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="120" column="45" selection-start-line="120" selection-start-column="45" selection-end-line="120" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plot_all_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="421">
+              <caret line="34" column="81" lean-forward="true" selection-start-line="34" selection-start-column="81" selection-end-line="34" selection-end-column="81" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IMAA_spider.py">
+        <entry file="file://$PROJECT_DIR$/sheets">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1365">
-              <caret line="88" selection-start-line="88" selection-end-line="88" selection-end-column="26" />
+            <state relative-caret-position="205">
+              <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="329" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tools.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-196">
+              <caret line="4" column="63" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -72,10 +75,11 @@
         <option value="$PROJECT_DIR$/EDUTRY.py" />
         <option value="$PROJECT_DIR$/VC.py" />
         <option value="$PROJECT_DIR$/preparing_data.py" />
-        <option value="$PROJECT_DIR$/plot_all_data.py" />
+        <option value="$PROJECT_DIR$/data_cleaning_reformat.py" />
         <option value="$PROJECT_DIR$/data_cleaning.py" />
         <option value="$PROJECT_DIR$/tools.py" />
-        <option value="$PROJECT_DIR$/data_cleaning_reformat.py" />
+        <option value="$PROJECT_DIR$/sheets" />
+        <option value="$PROJECT_DIR$/plot_all_data.py" />
       </list>
     </option>
   </component>
@@ -123,28 +127,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.data_cleaning_reformat">
-    <configuration name="VC" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="liuyuzhou svm model playground" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/venv/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/VC.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.plot_all_data">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="liuyuzhou svm model playground" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -208,6 +191,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="plot_all_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="liuyuzhou svm model playground" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plot_all_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="preparing_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="liuyuzhou svm model playground" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -252,18 +256,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.preparing_data" />
-      <item itemvalue="Python.VC" />
       <item itemvalue="Python.data_cleaning" />
       <item itemvalue="Python.data_cleaning_reformat" />
       <item itemvalue="Python.tools" />
+      <item itemvalue="Python.plot_all_data" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.plot_all_data" />
         <item itemvalue="Python.data_cleaning_reformat" />
         <item itemvalue="Python.tools" />
         <item itemvalue="Python.data_cleaning" />
         <item itemvalue="Python.preparing_data" />
-        <item itemvalue="Python.VC" />
       </list>
     </recent_temporary>
   </component>
@@ -297,13 +301,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="999" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28699315" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28699315" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.25678733" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.20361991" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39817628" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -362,20 +367,6 @@
     <entry file="file:///var/folders/x9/jcgvk48j42dd07tvq3kjmzn80000gn/T/TemporaryItems/（screencaptureui正在存储文稿，已完成11）/截屏2020-07-02 上午12.31.02.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/plot_all_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IMAA_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1365">
-          <caret line="88" selection-start-line="88" selection-end-line="88" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/preparing_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -390,17 +381,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="82" column="23" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data_cleaning.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="120" column="45" selection-start-line="120" selection-start-column="45" selection-end-line="120" selection-end-column="45" />
+        <state relative-caret-position="214">
+          <caret line="92" selection-start-line="92" selection-end-line="92" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IMAA_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="88" selection-start-line="88" selection-end-line="88" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/Collective Bargaining CoverageWithout SME and NA.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/Collective Bargaining CoverageWith SME and NA.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-196">
+          <caret line="4" column="63" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sheets">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="329" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plot_all_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="34" column="81" lean-forward="true" selection-start-line="34" selection-start-column="81" selection-end-line="34" selection-end-column="81" />
         </state>
       </provider>
     </entry>

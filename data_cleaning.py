@@ -86,13 +86,8 @@ def reformat_data_by_country_name(df, target_countries, target_code, df_name, ke
     for data in data_collection:
         writer.writerow(data)
     f.close()
-
-    df = pd.read_csv("data/temp.csv")
-    append_df_to_excel(df, df_name)
-
-
-
-
+    df_temp = pd.read_csv("data/temp.csv")
+    append_df_to_excel(df_temp, df_name)
 
 
 if __name__ == "__main__":
@@ -100,9 +95,8 @@ if __name__ == "__main__":
     df_countries = pd.read_excel(df, "Countries Selected")
     all_country_name, all_county_code, _ = read_all_target_country()
 
-    all_sheets = ['Coordination of Wage Setting', 'Work Council Rights', 'Countries Selected']
-
-    select_rows_sheets = ['Collective Bargaining Coverage', 'Employment Length < 1yr', 'Employment Protection', 'Mergers and Acquisitions', 'Long term Employment', "Size of Stock Market", 'VC investment']
+    select_rows_sheets = ['Collective Bargaining Coverage', 'Employment Length < 1yr', 'Employment Protection',
+                          'Mergers and Acquisitions', 'Long term Employment', "Size of Stock Market", 'VC investment']
 
     for i in range(len(select_rows_sheets)):
         sheet_name = select_rows_sheets[i]
@@ -112,8 +106,8 @@ if __name__ == "__main__":
         else:
             select_rows_by_country_name(df_current, all_country_name, sheet_name)
 
-
-    other_sheets = ["Unemployment Protection", 'Tertiary EMP Rate', 'UpperSecondary Non-Ter Emp Rate','Tertiary', 'Coordination of Wage Setting', 'Work Council Rights']
+    other_sheets = ["Unemployment Protection", 'Tertiary EMP Rate', 'UpperSecondary Non-Ter Emp Rate', 'Tertiary',
+                    'Coordination of Wage Setting', 'Work Council Rights']
     for i in range(len(other_sheets)):
         sheet_name = other_sheets[i]
         df_current = pd.read_excel(df, sheet_name)
