@@ -63,3 +63,21 @@ def get_all_country_code(df, country_name):
             target_country_code.append(all_country_code[index])
 
     return strip_every_element(target_country_code)
+
+
+def get_key_index(df):
+    title = df.columns.ravel().tolist()
+    subject_index, yr_index, value_index = 0, 0, 0
+
+    for i in range(len(title)):
+        if title[i] == "SUBJECT":
+            subject_index = i
+        elif title[i] == "TIME":
+            yr_index = i
+        elif title[i] == "VALUE":
+            value_index = i
+    return subject_index, yr_index, value_index
+
+
+def get_max_yr(df):
+    return max(df["TIME"].tolist())
