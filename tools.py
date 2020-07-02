@@ -44,6 +44,7 @@ def get_first_titile(df):
 
 
 def strip_every_element(lst):
+    lst = [x for x in lst if str(x) != 'nan']
     for i in range(len(lst)):
         lst[i] = lst[i].strip()
     return lst
