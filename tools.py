@@ -24,7 +24,7 @@ def get_target_type(df):
     for type in country_type:
         if type == "LME":
             r_lst.append(1)
-        if type == "CME":
+        elif type == "CME":
             r_lst.append(-1)
         else:
             r_lst.append(0)
