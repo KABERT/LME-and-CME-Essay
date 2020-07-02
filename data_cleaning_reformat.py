@@ -44,6 +44,6 @@ if __name__ == "__main__":
     df = pd.ExcelFile(r"data/DD_T2_Five_Spheres_All_in_One.xlsx")
     df_countries = pd.read_excel(df, "Countries Selected")
     all_countries = get_all_countries_name(df_countries)
-    
+
     all_sheets = df.sheet_names
     select_rows_sheets = ['Collective Bargaining Coverage', 'Employment Length < 1yr', 'Employment Protection', 'Tertiary EMP Rate', 'UpperSecondary Non-Ter Emp Rate', 'Tertiary', 'VC investment', 'Mergers and Acquisitions', 'Coordination of Wage Setting', 'Work Council Rights', 'Long term Employment', 'Countries Selected']

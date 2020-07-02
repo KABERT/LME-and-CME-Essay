@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="887486e1-378e-44de-acdf-6aa2fb4e54ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data_cleaning_reformat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plot_all_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EDUTRY.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VC.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/data/DD_T2_Five_Spheres_All_in_One.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/DD_T2_Five_Spheres_All_in_One.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Washed_DD_T2_Five_Spheres_All_in_One.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/Washed_DD_T2_Five_Spheres_All_in_One.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_cleaning.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_cleaning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/capitalization as a percentage of GDP.xls" beforeDir="false" afterPath="$PROJECT_DIR$/data/capitalization as a percentage of GDP.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_cleaning_reformat.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_cleaning_reformat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/playground.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,20 +31,29 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/data_cleaning_reformat.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="331">
-                  <caret line="46" column="4" lean-forward="true" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+                <state relative-caret-position="780">
+                  <caret line="49" selection-start-line="49" selection-end-line="49" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/tools.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="241">
+                  <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/EDUTRY.py">
+            <entry file="file://$PROJECT_DIR$/plot_all_data.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="315">
-                  <caret line="21" column="73" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="73" />
+                <state relative-caret-position="15">
+                  <caret line="1" selection-start-line="1" selection-end-line="1" />
                 </state>
               </provider>
             </entry>
@@ -61,8 +74,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/data_cleaning.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="325">
-                  <caret line="284" selection-start-line="284" selection-end-line="285" selection-end-column="57" />
+                <state relative-caret-position="90">
+                  <caret line="6" selection-start-line="6" selection-end-line="11" selection-end-column="23" />
                 </state>
               </provider>
             </entry>
@@ -70,7 +83,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/preparing_data.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="74">
+                <state relative-caret-position="480">
                   <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
                 </state>
               </provider>
@@ -111,15 +124,17 @@
         <option value="$PROJECT_DIR$/EDUTRY.py" />
         <option value="$PROJECT_DIR$/VC.py" />
         <option value="$PROJECT_DIR$/preparing_data.py" />
-        <option value="$PROJECT_DIR$/data_cleaning.py" />
         <option value="$PROJECT_DIR$/data_cleaning_reformat.py" />
+        <option value="$PROJECT_DIR$/plot_all_data.py" />
+        <option value="$PROJECT_DIR$/data_cleaning.py" />
+        <option value="$PROJECT_DIR$/tools.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="970" />
-    <option name="width" value="950" />
-    <option name="height" value="1080" />
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="720" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -160,28 +175,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.data_cleaning_reformat">
-    <configuration name="EDUTRY" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="liuyuzhou svm model playground" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/venv/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/EDUTRY.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.tools">
     <configuration name="VC" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="liuyuzhou svm model playground" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -287,20 +281,41 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="tools" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="liuyuzhou svm model playground" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tools.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.preparing_data" />
-      <item itemvalue="Python.EDUTRY" />
       <item itemvalue="Python.VC" />
       <item itemvalue="Python.data_cleaning" />
       <item itemvalue="Python.data_cleaning_reformat" />
+      <item itemvalue="Python.tools" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.tools" />
         <item itemvalue="Python.data_cleaning_reformat" />
         <item itemvalue="Python.data_cleaning" />
         <item itemvalue="Python.preparing_data" />
         <item itemvalue="Python.VC" />
-        <item itemvalue="Python.EDUTRY" />
       </list>
     </recent_temporary>
   </component>
@@ -318,15 +333,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1000" extended-state="6" />
+    <frame x="0" y="23" width="1920" height="999" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14060031" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14060031" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35367233" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3540724" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39817628" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -389,8 +404,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/preparing_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
+        <state relative-caret-position="480">
           <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plot_all_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_cleaning_reformat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
         </state>
       </provider>
     </entry>
@@ -401,10 +430,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_cleaning_reformat.py">
+    <entry file="file://$PROJECT_DIR$/tools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="46" column="4" lean-forward="true" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+        <state relative-caret-position="241">
+          <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
         </state>
       </provider>
     </entry>
