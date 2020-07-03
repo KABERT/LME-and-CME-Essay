@@ -122,12 +122,49 @@ def construct_dict_by_country_name(df, sheet_name):
     # loop over countries
     for i in range(len(countries)):
         for j in range(1, len(titles)):
-            if type(df_curr.iloc[i][j]) == str:
+            if df_curr.iloc[i][j] == ".." or df_curr.iloc[i][j] == "":
                 df_curr.iloc[i][j] = float("nan")
-            data_point = [int(titles[j]), float(df_curr.iloc[i][j])]
+            data_point = [int(titles[j]), float(df_curr.iloc[i].tolist()[j])]
             # Check if dict has the country or not.
             if countries[i] in dict:
                 dict[countries[i]].append(data_point)
             else:
                 dict[countries[i]] = [data_point]
     return dict
+
+
+def joint_dictionary_together(first, second):
+    if first == {}:
+        first = second
+    else:
+        for k, v in second.items():
+            # Check if the first dictionary has this country
+            if k not in first:
+                first[k] = second[k]
+            for items in v:
+                yr = items[0]
+                flag = False
+                for first_item in first[k]:
+                    if first_item[0] == yr:
+                        first_item[1] += items[1]
+                        flag = True
+                if not flag:
+                    first[k].append(items)
+    return first
+
+
+def invert_dict_to_lst(dict, SME):
+    X, y = [], []
+    all_target_country, _, code = read_all_target_country()
+    for country in all_target_country:
+        if country in dict:
+            data = dict[country]
+            country_type = code[all_target_country.index(country)]
+            if not SME:
+                if country_type != 0:
+                    X += data
+                    y += [country_type] * len(data)
+            else:
+                X += data
+                y += [country_type] * len(data)
+    return X, y
