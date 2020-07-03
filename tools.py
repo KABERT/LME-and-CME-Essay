@@ -83,7 +83,7 @@ def get_max_yr(df):
     return max(df["TIME"].tolist())
 
 
-def repharse_data_to_plot(df, sheet_name, SME=False):
+def repharse_data_and_type(df, sheet_name, SME=False):
     # Data collection: X and y
     X, y = [], []
     # Read the data using tools.
@@ -92,7 +92,6 @@ def repharse_data_to_plot(df, sheet_name, SME=False):
     titles = df_curr_sheet.columns.ravel().tolist()
 
     country_lst = df_curr_sheet[titles[0]].tolist()
-    print(sheet_name)
     for i in range(len(country_lst)):
         # get the corresponding type of the country
         curr_country_type = type_lst[all_country_lst.index(country_lst[i])]
@@ -111,3 +110,24 @@ def repharse_data_to_plot(df, sheet_name, SME=False):
                 X.append(point)
                 y.append(curr_country_type)
     return X, y
+
+
+def construct_dict_by_country_name(df, sheet_name):
+    df_curr = pd.read_excel(df, sheet_name)
+    titles = df_curr.columns.ravel().tolist()
+    country_title = titles[0]
+    countries = df_curr[country_title].tolist()
+
+    dict = {}
+    # loop over countries
+    for i in range(len(countries)):
+        for j in range(1, len(titles)):
+            if type(df_curr.iloc[i][j]) == str:
+                df_curr.iloc[i][j] = float("nan")
+            data_point = [int(titles[j]), float(df_curr.iloc[i][j])]
+            # Check if dict has the country or not.
+            if countries[i] in dict:
+                dict[countries[i]].append(data_point)
+            else:
+                dict[countries[i]] = [data_point]
+    return dict

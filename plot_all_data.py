@@ -1,6 +1,6 @@
 import matplotlib.pylab as plt
 import pandas as pd
-from tools import read_all_target_country, repharse_data_to_plot
+from tools import repharse_data_and_type
 import numpy as np
 
 
@@ -10,11 +10,11 @@ def plot_all_data(SME=False):
 
     for i in range(len(all_sheets_lst)):
         plt.close()
-        plot_helper(df, all_sheets_lst[i], SME)
+        X, y = repharse_data_and_type(df, all_sheets_lst[i], SME=SME)
+        plot_helper(X, y, all_sheets_lst[i], SME)
 
 
-def plot_helper(df, sheet_name, SME):
-    X, y = repharse_data_to_plot(df, sheet_name, SME=SME)
+def plot_helper(X, y, sheet_name, SME):
     X = np.asarray(X)
     if SME:
         suffix = " With SME and NA"
