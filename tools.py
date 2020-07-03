@@ -81,3 +81,33 @@ def get_key_index(df):
 
 def get_max_yr(df):
     return max(df["TIME"].tolist())
+
+
+def repharse_data_to_plot(df, sheet_name, SME=False):
+    # Data collection: X and y
+    X, y = [], []
+    # Read the data using tools.
+    all_country_lst, code_lst, type_lst = read_all_target_country()
+    df_curr_sheet = pd.read_excel(df, sheet_name)
+    titles = df_curr_sheet.columns.ravel().tolist()
+
+    country_lst = df_curr_sheet[titles[0]].tolist()
+    print(sheet_name)
+    for i in range(len(country_lst)):
+        # get the corresponding type of the country
+        curr_country_type = type_lst[all_country_lst.index(country_lst[i])]
+        for j in range(1, len(titles)):
+            point = [int(titles[j]), df_curr_sheet.loc[i].tolist()[j]]
+            if point[1] == ".." or point[1] == "":
+                point[1] = float("nan")
+            else:
+                point = [int(titles[j]), float(df_curr_sheet.loc[i].tolist()[j])]
+            # Check if this point is valid.
+            if not SME:
+                if int(curr_country_type) != 0:
+                    X.append(point)
+                    y.append(curr_country_type)
+            else:
+                X.append(point)
+                y.append(curr_country_type)
+    return X, y
