@@ -37,7 +37,6 @@ def get_ratio(X):
             X[i][1] = -1
         temp.append(X[i][1])
     max_val = max(temp)
-    lst = []
     if max_val > 4500:
         lst = []
         for i in range(len(temp)):
@@ -57,6 +56,8 @@ def update_indicator(dict, ratio):
                 indicator = dict[key][i][1] / ratio
                 if indicator >= 10:
                     dict[key][i][1] = 10
+                else:
+                    dict[key][i][1] = dict[key][i][1] / ratio
     return dict
 
 
