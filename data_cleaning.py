@@ -1,7 +1,6 @@
 import pandas as pd
-from openpyxl import load_workbook
-from tools import read_all_target_country, strip_every_element, get_first_titile, get_key_index, get_max_yr
-import csv
+from tools import read_all_target_country, strip_every_element, get_first_titile, get_key_index, get_max_yr, dict_to_write_helper, append_df_to_excel
+
 
 
 def write_df_to_excel(df, sheet_name, is_first=False):
@@ -9,17 +8,6 @@ def write_df_to_excel(df, sheet_name, is_first=False):
         df.to_excel("data/Washed_DD_T2_Five_Spheres_All_in_One.xlsx", sheet_name=sheet_name, index=False)
     else:
         append_df_to_excel(df, sheet_name)
-
-
-def append_df_to_excel(df, sheet_name):
-    path = "data/Washed_DD_T2_Five_Spheres_All_in_One.xlsx"
-    book = load_workbook(path)
-    writer = pd.ExcelWriter(path, engine='openpyxl')
-    writer.book = book
-
-    df.to_excel(writer, sheet_name=sheet_name, index=False)
-    writer.save()
-    writer.close()
 
 
 def select_rows_by_country_name(df, target_countries, df_name, is_first=False):
@@ -62,32 +50,7 @@ def reformat_data_by_country_name(df, target_countries, target_code, df_name, ke
                     else:
                         data_collection[all_countries[i]][0].append(df.loc[i][yr_index])
                         data_collection[all_countries[i]][1].append(df.loc[i][value_index])
-
-    lst_data, lst_yr = [], []
-    for country in target_countries:
-        if country not in data_collection:
-            print(df_name, "is Missing: ", country_copy[target_countries.index(country)])
-        else:
-            lst_data.append(data_collection[country][1])
-            lst_yr.append(data_collection[country][0])
-
-    data_collection = []
-    for i in range(len(lst_yr)):
-        dict_subject = {"Country Name": country_copy[i]}
-        for j in range(len(lst_yr[i])):
-            dict_subject[lst_yr[i][j]] = lst_data[i][j]
-        data_collection.append(dict_subject)
-
-    f = open("data/temp.csv", "w")
-    writer = csv.DictWriter(f, fieldnames=["Country Name", 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007,
-                                           2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020]
-                            )
-    writer.writeheader()
-    for data in data_collection:
-        writer.writerow(data)
-    f.close()
-    df_temp = pd.read_csv("data/temp.csv")
-    append_df_to_excel(df_temp, df_name)
+    dict_to_write_helper(data_collection, target_countries, country_copy, df_name)
 
 
 if __name__ == "__main__":
@@ -96,7 +59,7 @@ if __name__ == "__main__":
     all_country_name, all_county_code, _ = read_all_target_country()
 
     select_rows_sheets = ['Collective Bargaining Coverage', 'Employment Length < 1yr', 'Employment Protection',
-                          'Mergers and Acquisitions', 'Long term Employment', "Size of Stock Market", 'VC investment']
+                          'Mergers and Acquisitions', 'Long term Employment', "Size of Stock Market", 'VC investment', 'Avg Tenure']
 
     for i in range(len(select_rows_sheets)):
         sheet_name = select_rows_sheets[i]
@@ -106,14 +69,12 @@ if __name__ == "__main__":
         else:
             select_rows_by_country_name(df_current, all_country_name, sheet_name)
 
-    other_sheets = ["Unemployment Protection", 'Tertiary EMP Rate', 'UpperSecondary Non-Ter Emp Rate', 'Tertiary',
+    other_sheets = ["Unemployment Protection", 'UpperSecondary Non-Ter Emp Rate', 'Tertiary',
                     'Coordination of Wage Setting', 'Work Council Rights']
     for i in range(len(other_sheets)):
         sheet_name = other_sheets[i]
         df_current = pd.read_excel(df, sheet_name)
 
-        if sheet_name == "Tertiary EMP Rate":
-            key = "TRY"
         if sheet_name == "UpperSecondary Non-Ter Emp Rate":
             key = "UPPSRY_NTRY"
         if sheet_name == 'Tertiary':

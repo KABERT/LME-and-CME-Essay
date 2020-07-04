@@ -1,4 +1,6 @@
 import pandas as pd
+import csv
+from openpyxl import load_workbook
 
 
 def read_all_target_country():
@@ -168,3 +170,54 @@ def invert_dict_to_lst(dict, SME):
                 X += data
                 y += [country_type] * len(data)
     return X, y
+
+
+def dict_to_write_helper(data_collection, target_countries, country_copy, df_name):
+    lst_data, lst_yr = [], []
+    for country in target_countries:
+        if country not in data_collection:
+            print(df_name, "is Missing: ", country_copy[target_countries.index(country)])
+        else:
+            lst_data.append(data_collection[country][1])
+            lst_yr.append(data_collection[country][0])
+
+    data_collection = []
+    for i in range(len(lst_yr)):
+        dict_subject = {"Country Name": country_copy[i]}
+        for j in range(len(lst_yr[i])):
+            dict_subject[lst_yr[i][j]] = lst_data[i][j]
+        data_collection.append(dict_subject)
+
+    f = open("data/temp.csv", "w")
+    writer = csv.DictWriter(f, fieldnames=["Country Name", 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007,
+                                           2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020]
+                            )
+    writer.writeheader()
+    for data in data_collection:
+        writer.writerow(data)
+    f.close()
+    df_temp = pd.read_csv("data/temp.csv")
+    # append_df_to_excel(df_temp, df_name)
+
+
+def append_df_to_excel(df, sheet_name):
+    path = "data/Washed_DD_T2_Five_Spheres_All_in_One.xlsx"
+    book = load_workbook(path)
+    writer = pd.ExcelWriter(path, engine='openpyxl')
+    writer.book = book
+
+    df.to_excel(writer, sheet_name=sheet_name, index=False)
+    writer.save()
+    writer.close()
+
+
+def reformate_dict_to_output(dict):
+    for keys in dict:
+        data = dict[keys]
+        yr_lst, data_lst = [], []
+        for i in range(len(dict[keys])):
+            yr_lst.append(data[i][0])
+            data_lst.append(data[i][1]/2)
+        dict[keys] = [yr_lst, data_lst]
+    return dict
+
